@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(circle at 50% -20.71%, #fbe2d5 0, #fadace 10%, #f9d2c7 20%, #f7c9c1 30%, #f5c0bb 40%, #f2b5b5 50%, #eeabb1 60%, #eaa1ae 70%, #e699ae 80%, #e091af 90%, #da8bb1 100%);;;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img{
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}

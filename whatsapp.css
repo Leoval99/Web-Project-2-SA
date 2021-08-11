@@ -1,0 +1,37 @@
+.whatsapp{
+    position: sticky;
+    bottom: 0;
+    height: 0;
+    display: grid;
+    grid-template-columns: 250px 100px;
+    justify-content: end;
+}
+.whats-contacto{
+    background-color: var(--blanco);
+    width: 190px;
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+    margin: auto;
+    height: 50px;
+    border: 1px solid var(--negro);
+    border-radius: 10px;
+    margin-bottom: -80px;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.whats-contacto-2{
+    margin-bottom: 20px;
+    visibility: visible;
+}
+.whats-logo{
+    height: 90px;
+    position: relative;
+    bottom: 100px;
+    transition: all 0.2s;
+}
+@media (max-width: 767px) {
+    .whats-logo{
+        height: 70px;
+    }
+}

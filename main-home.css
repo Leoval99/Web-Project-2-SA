@@ -1,0 +1,140 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: var(--fondo);
+    text-align: center;
+    margin: auto;
+}
+main{
+    min-height: calc(100vh - 305px);
+}
+.main-titulo{
+    background-color: var(--blanco);
+    margin: 0 0 30px;
+    padding: 15px 0;
+    justify-content: center;
+    font-size: 26px;
+}
+.logon{
+    height: 100px;
+    width: 100px;
+}
+.destacado-contenedor{
+    width: 94vw;
+    margin: auto;
+}
+.destacado-producto{
+    background-color: var(--blanco);
+    max-width: 800px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.destacado-img-contenedor{
+    width: 45vw;
+    max-width: 250px;
+    height: 45vw;
+    max-height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.destacado-img-contenedor img{
+    transition: all .7s ease;
+    width: 100%;
+}
+.destacado-img-contenedor:hover img{
+    transform: scale(1.25);
+}
+.destacado-contenido{
+    display: grid;
+    grid-template-rows: auto 1fr 35px;
+    height: 250px;
+}
+.destacado-a{
+    color: var(--negro);
+    text-decoration: none;
+    margin: auto;
+}
+.destacado-titulo{
+    margin: 0;
+    padding: 9px 40px;
+}
+.destacado-titulo:hover{
+    text-decoration: underline;
+}
+.destacado-descripcion{  
+    margin: 0 30px;
+    display: flex;
+}
+.destacado-precio{
+    margin: 0;
+    margin-right: 30px;
+    text-align: end;
+}
+.ver-contenedor{
+    margin-bottom: 30px;
+}
+.ver-productos{
+    background-color: var(--blanco);
+    text-decoration: none;
+    color: var(--negro);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+.ver-productos:hover{
+    text-decoration: underline;
+}
+@media (max-width: 767px) {
+    main{
+        min-height: calc(100vh - 490px);
+    } 
+    .main-titulo{
+        font-size: 22px;
+    }
+    .destacado-contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        column-gap: 3vw;
+        row-gap: 20px;
+        margin-bottom: 30px;
+    }
+    .destacado-producto{
+        width: 45vw;
+        max-width: 250px;
+        height: auto;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .destacado-img-contenedor{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+    .destacado-contenido{
+        height: auto;
+        grid-template-rows: auto 0px 35px;
+    }
+    .destacado-titulo{
+        font-size: 20px;
+        padding: 9px 30px;
+    }
+    .destacado-descripcion{
+        display: none;
+    }
+    .destacado-precio{
+        margin: auto;
+    }
+}
+@media (max-width: 414px) {
+    .destacado-titulo{
+        font-size: 18px;
+        padding: 9px 15px;
+    }
+}

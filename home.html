@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melange</title>
+    <link rel="icon" href="favico.png">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main-home.css">
+    <link rel="stylesheet" href="whatsapp.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.css"/>
+</head>
+<body>
+<!---------- Empieza el encabezado ---------->
+<nav class="nav">    
+    <ul class="lista-oculta">
+        <li class="lista-oculta-item">
+            <a class="btn" id="btn"></a>
+        </li>
+        <li class="lista-oculta-item">
+            <a href="home.html">
+                <img src="imagenes/logo.png" alt="logo" class="logon">
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav-lista" id="lista">
+        <li class="nav-lista-item nav-lista-item-1">
+            <a href="home.html" class="nav-lista-item-link" id="link">Inicio</a>
+        </li>
+        <li class="nav-lista-item">
+            <a href="tienda.html" class="nav-lista-item-link" id="link">Tienda</a>
+        </li>
+        <li class="nav-lista-item img-hover">
+            <a href="home.html" class="nav-lista-item-link img-a">
+                <img src="imagenes/logo.png" alt="logo" class="nav-lista-item-img">
+            </a>
+        </li>
+        <li class="nav-lista-item">
+            <a href="nosotros.html" class="nav-lista-item-link" id="link">Nosotros</a>
+        </li>
+        <li class="nav-lista-item">
+            <a href="contacto.html" class="nav-lista-item-link" id="link">Contacto</a>
+        </li>
+    </ul>
+</nav>
+
+<script src="nav.js"></script>
+<!---------- Termina el encabezado ---------->
+
+<!---------- Empieza slider ---------->
+<div id="my-keen-slider" class="keen-slider">
+    <div class="keen-slider__slide number-slide1"><img src="slider/1.jpg" alt="" class="img"></div>
+    <div class="keen-slider__slide number-slide2"><img src="slider/2.jpg" alt="" class="img"></div>
+    <div class="keen-slider__slide number-slide3"><img src="slider/3.jpg" alt="" class="img"></div>
+    <div class="keen-slider__slide number-slide4"><img src="slider/4.jpg" alt="" class="img"></div>
+    <div class="keen-slider__slide number-slide5"><img src="slider/5.png" alt="" class="img"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js"></script>
+  <script src="slider.js"></script>
+</body>
+<!---------- Termina slider ---------->
+
+<!---------- Empieza main ---------->
+<main>
+    <h1 class="main-titulo">Productos Destacados</h1>
+
+    <div class="destacado-contenedor">
+
+        <div class="destacado-producto">
+            <div class="destacado-img-contenedor">
+                <a href="producto.html">
+                    <img src="imagenes/1.jpeg" alt="#">
+                </a>
+            </div>
+            <div class="destacado-contenido">
+                <a href="producto.html" class="destacado-a">
+                    <h2 class="destacado-titulo">Torta de chocolate</h2>
+                </a>
+                <p class="destacado-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae minus temporibus, facilis autem consequuntur sed ipsam cum, velit provident tempora repudiandae vel obcaecati fuga. Fugiat fuga magnam odio ratione amet!</p>
+                <p class="destacado-precio">Precio: $500</p>
+            </div>
+        </div>
+
+        <div class="destacado-producto">
+            <div class="destacado-img-contenedor">
+                <a href="producto.html">
+                    <img src="imagenes/2.jpeg" alt="#">
+                </a>
+            </div>
+            <div class="destacado-contenido">
+                <a href="producto.html" class="destacado-a">
+                    <h2 class="destacado-titulo">Torta de diseño</h2>
+                </a>
+                <p class="destacado-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nemo labore, ea dolor quidem, vero porro earum illo animi veritatis tempora culpa minus explicabo delectus quae, accusantium eius dignissimos a?</p>
+                <p class="destacado-precio">Precio: $500</p>
+            </div>
+        </div>
+
+        <div class="destacado-producto">
+            <div class="destacado-img-contenedor">
+                <a href="producto.html">
+                    <img src="imagenes/3.jpeg" alt="#">
+                </a>
+            </div>
+            <div class="destacado-contenido">
+                <a href="producto.html" class="destacado-a">
+                    <h2 class="destacado-titulo">Alfajores de chocolate</h2>
+                </a>
+                <p class="destacado-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi reprehenderit odio ex blanditiis magnam aut corrupti modi cum! Cupiditate animi nostrum accusamus sit rem obcaecati eligendi amet quisquam! Amet.</p>
+                <p class="destacado-precio">Precio: $500</p>
+            </div>
+        </div>
+        
+        <div class="destacado-producto">
+            <div class="destacado-img-contenedor">
+                <a href="producto.html">
+                    <img src="imagenes/4.jpeg" alt="#">
+                </a>
+            </div>
+            <div class="destacado-contenido">
+                <a href="producto.html" class="destacado-a">
+                    <h2 class="destacado-titulo">Alfajores de maicena</h2>
+                </a>
+                <p class="destacado-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, repudiandae fugiat excepturi veritatis dolore ducimus dolor laborum quas, illo officiis fugit omnis! Quod repudiandae id placeat, quis ducimus quisquam nihil.</p>
+                <p class="destacado-precio">Precio: $500</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ver-contenedor">
+        <a href="tienda.html" class="ver-productos">Ver todos los productos</a>
+    </div>
+</main>
+<!---------- Termina main ---------->
+
+<!---------- Empieza Whatsapp ---------->
+<div class="whatsapp">
+    <p class="whats-contacto" id="contacto">Contactate directamente por WhatsApp</p>
+    <a href="https://api.whatsapp.com/send/?phone=541148702106&text&app_absent=0" id="whats">
+        <img src="imagenes/whats1.png" alt="WhatsApp" class="whats-logo">
+    </a>
+</div>
+<script src="whats.js"></script>
+<!---------- Termina Whatsapp ---------->
+
+<!---------- Empieza el footer ---------->
+<footer class="footer">
+    <div class="footer-logo">
+        <picture>    
+            <source srcset="imagenes/logo.png" media="(min-width: 768px)">
+            <img src="imagenes/logof.png" alt="logo" class="footer-logo-img">
+        </picture>
+    </div>
+
+    <div class="footer-redes">
+        <h2 class="footer-titulos">Redes sociales</h2>
+        <ul class="footer-redes-lista">
+            <li class="footer-redes-item">
+                <a href="https://www.facebook.com/Pasteleriaconamorr/">
+                    <img src="imagenes/face.png" alt="ir a facebook" class="footer-redes-logo">
+                </a>
+            </li>
+            <li class="footer-redes-item">
+                <a href="https://www.instagram.com/melangemaricel/">
+                    <img src="imagenes/inst.png" alt="ir a instagram" class="footer-redes-logo">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-contacto">
+        <h2 class="footer-titulos">Contacto</h2>
+        <ul class="footer-contacto-lista">
+            <li class="footer-contacto-item">WhatsApp : 11-4870-2106</li>
+            <li class="footer-contacto-item">Telefono : 5549-5549</li>
+            <li class="footer-contacto-item">Email: melangemaricel@gmail.com</li>
+        </ul>
+    </div> 
+
+    <div class="footer-creditos">
+        <p class="footer-creditos-p">Melange 2021 - Creado por Leonardo Valenti y Ezequiel Choque</p>
+    </div>
+</footer>
+<!---------- Termina el footer ---------->
+</body>
+</html>

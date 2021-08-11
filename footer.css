@@ -1,0 +1,125 @@
+.footer{
+    background-color: var(--blanco);
+    display: grid;
+    grid-template-columns: 20vw 1fr 1fr;
+    grid-template-rows: 180px 25px;
+    height: 205px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+.footer-titulos{
+    font-size: var(--h2);
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: -5px;
+    font-size: 20px;
+}
+.footer-logo{
+    height: 150px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo-img{
+    width: 15vw;
+    height: 15vw;
+    max-height: 150px;
+    max-width: 150px;
+}
+.footer-redes{
+    height: 150px;
+    margin-top: 7px;
+    border-right: 1px solid var(--gris_oscuro);
+    border-left: 1px solid var(--gris_oscuro);
+}
+.footer-redes-lista{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 30px;
+}
+.footer-redes-logo{
+    margin-top: 20px;
+    width: 8vw;
+    height: 8vw;
+    max-width: 80px;
+    max-height: 80px;
+}
+.footer-contacto{
+    margin-top: 7px;
+    height: 150px;
+}
+.footer-contacto-lista{
+    list-style: none;
+    padding: 0;   
+}
+.footer-contacto-item{
+    margin-bottom: 15px;
+}
+.footer-creditos{
+    padding-right: 10px;
+    color: var(--gris_oscuro);
+    grid-column: 1/-1;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.footer-creditos-p{
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .footer{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 100px 110px 150px 1fr;  
+        height: 420px;
+    }
+    .footer-titulos{
+        margin: none;
+        margin-top: 5px;
+    }
+    .footer-logo{
+        height: 100px;
+        display: block;
+        margin-top: 0;
+        border-top: 1px solid var(--gris_claro);
+    }
+    .footer-logo-img{
+        height: 100px;
+        max-width: none;
+        width: 200px;
+    }
+    .footer-redes{
+        height: 110px;
+        margin: 0;
+        border: none; 
+        border-top: 1px solid var(--gris_claro);
+    }
+    .footer-redes-lista{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        gap: 30px;
+    }  
+    .footer-redes-logo{
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+    }  
+    .footer-contacto{
+        border-top: 1px solid var(--gris_claro);
+        border-bottom: 1px solid var(--gris_claro);
+        height: 150px;
+        margin: 0;
+    }
+    .footer-creditos{
+        padding: 0 5px;
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+}
